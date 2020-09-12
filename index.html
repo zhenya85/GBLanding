@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1"/>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/popup-style.css">
+<!--    <link rel="stylesheet" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css">-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popup_plugin.js"></script>
+    <script src="js/my_library.js" defer></script>
+    <title>GeekBrains Landing Page</title>
+
+</head>
+<body>
+
+<header id="menu" class="menu">
+    <div class="container">
+        <div class="label" onclick="location.href='#'">
+            <p><span class="fLetter">G</span><span class="lableText">eek</span><span class="fLetter">B</span><span class="lableText">rains</span></p>
+        </div>
+        <nav>
+            <label for="gl_menu" onclick="mobileMenu()"></label>
+            <input type="checkbox" id="gl_menu">
+            <ul class="gl_menu">
+                <li class="gl_menu_str"><a href="#sec1">О проекте</a></li>
+                <li class="gl_menu_str"><a href="#sec2">Факультеты</a></li>
+                <li class="gl_menu_str"><a href="#sec5">Программа</a></li>
+                <li class="gl_menu_str"><a href="#sec4">Преподаватели</a></li>
+                <li class="gl_menu_str"><a href="#sec8">Результаты</a></li>
+                <li class="gl_menu_str"><a href="#sec6">Вопросы</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<!--Шапка сайта-->
+<div class="title_backgroung_img">
+    <div class="title_container">
+        <h2 class="title_heading">GeekUniversity</h2>
+        <p class="title_text">Онлайн-университет от @Mail.ru с гарантированным трудоустройством</p>
+        <a href="#sec10" class="style_button">Хочу поступить</a>
+        <div class="title_priority">
+            <div class="priority_blok-1 green">
+                <img src="images/GS.png" alt="">
+                <p>Возврат части <br> подоходного налога</p>
+            </div>
+            <div class="priority_blok-2 violet">
+                <img src="images/Clock.png" alt="">
+                <p>Свидетельство и сертификат<br> об обучении</p>
+            </div>
+            <div class="priority_blok-3 orange">
+                <img src="images/Tick.png" alt="">
+                <p>Гарантированная<br> стажировка</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+
+<!--Блок содержит информацию о проекте-->
+<section id="sec1" class="sec-1">
+    <div class="container-1">
+        <img src="images/about.jpg" alt="about us">
+        <article class="about">
+            <h3>О проекте</h3>
+            <p>GeekBrains — Образовательный IT-портал</p>
+
+            <p>Мы учим людей с нуля осваивать программирование, веб-дизайн и маркетинг.
+                Проводим онлайн-курсы со стажировкой и бесплатные мастер-классы,
+                развиваем IT-сообщество, сотрудничаем с компаниями по трудоустройству и
+                непрерывно тестируем новые методики для поднятия эффективности обучения. </p>
+            <div class="buttom_line_blok buttom_line_blok_buttom"></div>
+        </article>
+    </div>
+</section>
+
+<!--Информация о факультетах-->
+<section id="sec2" class="sec-2">
+    <article class="our_focus">
+        <h2>Наши факультеты</h2>
+        <p>Мы поможем повысить ваш уровень с junior до middle, с гарантированным трудоустройством</p>
+        <div class="container_sec-2">
+                <figure class="bg_red" onclick="window.open('https://geekbrains.ru/geek_university/web','_blank')">
+                    <img src="images/web-new.png" alt="">
+                    <h3>Веб-разработка</h3>
+                    <p>Разработаем современную систему управления задачами, а также небольшую социальную сеть.</p>
+                </figure>
+            <figure class="bg_green" onclick="window.open('https://geekbrains.ru/geek_university/java','_blank')">
+                <img src="images/java-new.png" alt="">
+                <h3>Java-разработка</h3>
+                <p>Пройдем полный цикл разработки веб-приложений и создадим сайт электронной коммерции</p>
+            </figure>
+            <figure class="bg_purple" onclick="window.open('https://geekbrains.ru/geek_university/android','_blank')">
+                <img src="images/android-new.png" alt="">
+                <h3>Android-разработка</h3>
+                <p>Вы создадите 6 реальных Java и Android-приложений как самостоятельно,
+                    так и в команде</p>
+            </figure>
+            <figure class="bg_orange" onclick="window.open('https://geekbrains.ru/geek_university/games','_blank')">
+                <img src="images/games-new.png" alt="">
+                <h3>Разработка игр</h3>
+                <p>Вы разработаете полноценный 3D-shooter, с искусственным интеллектом соперников,
+                    динамической генерацией уровней, визуальными эффектами и пр.</p>
+            </figure>
+        </div>
+        
+    </article>
+    
+</section>
+
+<!--Видеоконтент-->
+<section class="sec-2-1">
+    <h2>Наша цель - ваше трудоустройство</h2>
+    <a href="#?w=1280" rel="popup_video" class="poplight"></a>
+    <p>Нажмите для запуска видео</p>
+    <div id="popup_video" class="popup_block">
+        <video id="Video" loop="" poster="https://s3.eu-central-1.amazonaws.com/geekbrains-cdn/gb_final_poster.jpg" controls>
+            <source src="https://s3.eu-central-1.amazonaws.com/geekbrains-cdn/GB+final.mp4" type="video/mp4">
+       <!--     <source src="video/GB+final.mp4" type='video/mp4'>-->
+        </video>
+
+    </div>
+</section>
+
+<!--Программа обучения-->
+<section id="sec5" class="sec-5">
+    <article class="workStep">
+        <h2>Программа обучения на факультете <br> Веб-разработки</h2>
+        <p>Вас ожидает 2-4 занятия в неделю в вечернее время по темам</p>
+        <div class="ws_container">
+            <div class="img_blok"><img src="images/one_quarter.png" alt="">
+                <div class="img_blok_info ws_blok_left bg_red ws_blok_01" >
+                    <h4 class="text_red">ЧЕТВЕРТЬ</h4>
+                    <ul class="ul_marker_red">
+                        <li>Профессиональная верстка (1 месяц, 2 раза в неделю)</li>
+                        <li>Базовый курс Javascript (1 месяц, 2 раза в неделю)</li>
+                        <li>Продвинутый курс Javascript (1 месяц, 2 раза в неделю)</li>
+                        <li>Компьютерные сети (2 месяца, 1 раз в неделю)</li>
+                        <li>Как стать программистом? (Видеокурс)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img_blok"><img src="images/two_quarter.png" alt="">
+                <div class="img_blok_info ws_blok_right bg_green ws_blok_02">
+                    <h4 class="text_green">ЧЕТВЕРТЬ</h4>
+                    <ul class="ul_marker_green">
+                        <li>Базовый курс PHP (1 месяц, 2 раза в неделю)</li>
+                        <li>Профессиональная разработка на PHP <br>(2 месяца, 1 раз в неделю)</li>
+                        <li>Базы данных (1 месяц, 2 раза в неделю)</li>
+                        <li>Операционные системы (1 месяц, 2 раза в неделю)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img_blok"><img src="images/three_quarter.png" alt="">
+                <div class="img_blok_info ws_blok_left bg_purple ws_blok_03">
+                    <h4 class="text_purple">ЧЕТВЕРТЬ</h4>
+                    <ul class="ul_marker_purple">
+                        <li>YII 2 Framework. Часть 1 (1 месяц, 2 раза в неделю)</li>
+                        <li>YII 2 Framework. Часть 2 (1 месяц, 2 раза в неделю)</li>
+                        <li>React JS (1 месяц, 2 раза в неделю)</li>
+                        <li>Алгоритмы и структуры данных на PHP <br>(1 месяц, 1 раз в неделю)</li>
+                        <li>Архитектуры и шаблоны проектирования <br>(2 месяца, 1 раз в неделю)</li>
+                        <li>Факультативы от компаний</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img_blok"><img src="images/four_quarter.png" alt="">
+                <div class="img_blok_info ws_blok_right bg_orange ws_blok_04">
+                    <h4 class="text_orange">ЧЕТВЕРТЬ</h4>
+                    <ul class="ul_marker_orange">
+                        <li>Разработка Highload-проекта (1 месяц, 2 раза в неделю)</li>
+                        <li>Командная разработка (2 месяца, 1 раз в неделю)</li>
+                        <li>Факультативы от компаний</li>
+                        <li>Подготовка к собеседованию веб-разработчика <br>(7 недель, 1 раз в неделю)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+
+<!--Описание тем, преподаваемых предметов-->
+<section class="sec-3">
+    <article class="portfolio">
+        <h2>Описание тематики обучения <br> на факультете Веб-разработка</h2>
+        <p>Дается перечень тем, изучаемых в рамках курса обучения</p>
+        <div class="sec-3_container">
+
+            <div id="sec3-1" class="sec-3_cblok popup_div" rel="sec3div-1#w=700">
+                <img src="images/LearningTopics/htm5css3.jpg" alt="">
+                <div class="portf_info">
+                    <div class="buttom_line_blok buttom_line_blok_top"></div>
+                    <p>HTML5 & CSS3</p>
+                </div>
+            </div>
+            <div id="sec3-2" class="sec-3_cblok popup_div" rel="sec3div-2#w=700" >
+                <img src="images/LearningTopics/js.jpg" alt="">
+                <div class="portf_info">
+                    <div class="buttom_line_blok buttom_line_blok_top"></div>
+                    <p>JavaScript</p>
+                </div>
+            </div>
+            <div id="sec3-3" class="sec-3_cblok popup_div" rel="sec3div-3#w=700" >
+                <img src="images/LearningTopics/PCLan.jpg" alt="">
+                <div class="portf_info">
+                    <div class="buttom_line_blok buttom_line_blok_top"></div>
+                    <p>Компьютерные сети</p>
+                </div>
+            </div>
+            <div id="sec3-4" class="sec-3_cblok popup_div" rel="sec3div-4#w=700" >
+                <img src="images/LearningTopics/programmist.jpg" alt="">
+                <div class="portf_info">
+                    <div class="buttom_line_blok buttom_line_blok_top"></div>
+                    <p>Как стать программистом</p>
+                </div>
+            </div>
+            <div id="sec3-5" class="sec-3_cblok popup_div" rel="sec3div-5#w=700" >
+                <img src="images/LearningTopics/php1.jpg" alt="">
+                <div class="portf_info">
+                    <div class="buttom_line_blok buttom_line_blok_top"></div>
+                    <p>Базовый курс PHP</p>
+                </div>
+            </div>
+            <div id="sec3-6" class="sec-3_cblok popup_div" rel="sec3div-6#w=700" >
+                <img src="images/LearningTopics/php2.jpg" alt="">
+                <div class="portf_info">
+                    <div class="buttom_line_blok buttom_line_blok_top"></div>
+                    <p>Продвинутый курс PHP</p>
+                </div>
+            </div>
+            <div id="sec3-7" class="sec-3_cblok popup_div" rel="sec3div-7#w=700" >
+                <img src="images/LearningTopics/DataBase.jpg" alt="">
+                <div class="portf_info">
+                    <div class="buttom_line_blok buttom_line_blok_top"></div>
+                    <p>Базы данных</p>
+                </div>
+            </div>
+            <div id="sec3-8" class="sec-3_cblok popup_div" rel="sec3div-8#w=700" >
+                <img src="images/LearningTopics/OS.jpg" alt="">
+                <div class="portf_info">
+                    <div class="buttom_line_blok buttom_line_blok_top"></div>
+                    <p>Операционные системы</p>
+                </div>
+            </div>
+            <div id="sec3-9" class="sec-3_cblok popup_div" rel="sec3div-9#w=700" >
+                <img src="images/LearningTopics/yii.jpg" alt="">
+                <div class="portf_info">
+                    <div class="buttom_line_blok buttom_line_blok_top"></div>
+                    <p>YII2 Framework (Часть 1)</p>
+                </div>
+            </div>
+            <div id="sec3-10" class="sec-3_cblok popup_div" rel="sec3div-10#w=700" >
+                <img src="images/LearningTopics/yii2.jpg" alt="">
+                <div class="portf_info">
+                    <div class="buttom_line_blok buttom_line_blok_top"></div>
+                    <p>YII2 Framework (Часть 2)</p>
+                </div>
+            </div>
+            <div id="sec3-11" class="sec-3_cblok popup_div" rel="sec3div-11#w=700" >
+                <img src="images/LearningTopics/reactjs.jpg" alt="">
+                <div class="portf_info">
+                    <div class="buttom_line_blok buttom_line_blok_top"></div>
+                    <p>ReactJS</p>
+                </div>
+            </div>
+            <div id="sec3-12" class="sec-3_cblok popup_div" rel="sec3div-12#w=700" >
+                <img src="images/LearningTopics/Algoritm.jpg" alt="">
+                <div class="portf_info">
+                    <div class="buttom_line_blok buttom_line_blok_top"></div>
+                    <p>Алгоритмы и структуры данных</p>
+                </div>
+            </div>
+            <div id="sec3-13" class="sec-3_cblok popup_div" rel="sec3div-13#w=700" >
+                <img src="images/LearningTopics/design.jpg" alt="">
+                <div class="portf_info">
+                    <div class="buttom_line_blok buttom_line_blok_top"></div>
+                    <p>Архитектуры и шаблоны проектирования</p>
+                </div>
+            </div>
+            <div id="sec3-14" class="sec-3_cblok popup_div" rel="sec3div-14#w=700" >
+                <img src="images/LearningTopics/highload.jpg" alt="">
+                <div class="portf_info">
+                    <div class="buttom_line_blok buttom_line_blok_top"></div>
+                    <p>Разработка Highload-проекта</p>
+                </div>
+            </div>
+            <div id="sec3-15" class="sec-3_cblok popup_div" rel="sec3div-15#w=700" >
+                <img src="images/LearningTopics/command.jpg" alt="">
+                <div class="portf_info">
+                    <div class="buttom_line_blok buttom_line_blok_top"></div>
+                    <p>Коммандная разработка</p>
+                </div>
+            </div>
+            <div id="sec3-16" class="sec-3_cblok popup_div" rel="sec3div-16#w=700" >
+                <img src="images/LearningTopics/interview.jpg" alt="">
+                <div class="portf_info">
+                    <div class="buttom_line_blok buttom_line_blok_top"></div>
+                    <p>Подготовка к собеседованию</p>
+                </div>
+            </div>
+
+            <div id="sec3div-1" class="popup_div_blok">
+                <h2>Профессиональная верстка</h2>
+                <h3>(1 месяц, 2 раза в неделю)</h3>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>Адаптивная и кроссбраузерная верстка</li>
+                    <li>Использование препроцессоров LESS & SASS</li>
+                    <li>Использование и применение Bootstrap и flexbox</li>
+                </ul>
+            </div>
+            <div id="sec3div-2" class="popup_div_blok">
+                <h2>Базовый курс Javascript</h2>
+                <h3>(1 месяц, 2 раза в неделю)</h3>
+                <ul>
+                    <li>Переменные, типы данных, циклы, ветвления, функции</li>
+                    <li>Инструменты разработки и отладка в браузере</li>
+                    <li>Методы и объекты в JS</li>
+                    <li>DOM</li>
+                </ul>
+                <h2>Продвинутый курс Javascript</h2>
+                <h3>(1 месяц, 2 раза в неделю)</h3>
+                <ul>
+                    <li>Объектно-ориентированная парадигма в JavaScript</li>
+                    <li>JQuery</li>
+                    <li>Ajax</li>
+                    <li>Gulp, grunt</li>
+                </ul>
+            </div>
+            <div id="sec3div-3" class="popup_div_blok">
+                <h2>Компьютерные сети</h2>
+                <h3>(2 месяца, 1 раз в неделю)</h3>
+                <ul>
+                    <li>Работа web-сервера и протокол HTTP</li>
+                    <li>Стек TCP/IP</li>
+                    <li>Работа с сетевыми утилитами</li>
+                    <li>Безопасность в компьютерных сетях</li>
+                </ul>
+            </div>
+            <div id="sec3div-4" class="popup_div_blok">
+                <h2>Как стать программистом?</h2>
+                <h3>(Видеокурс)</h3>
+                <ul>
+                    <li>Подготовка резюме</li>
+                    <li>Как правильно проходить собеседования?</li>
+                    <li>Фриланс</li>
+                    <li>Сфера IT</li>
+                </ul>
+            </div>
+            <div id="sec3div-5" class="popup_div_blok">
+                <h2>Базовый курс PHP</h2>
+                <h3>(1 месяц, 2 раза в неделю)</h3>
+                <ul>
+                    <li>Переменные, типы данных, циклы, ветвления, функции</li>
+                    <li>Работа с файлы и базой данных</li>
+                    <li>GET и POST-запросы</li>
+                    <li>Сессии и Cookies</li>
+                </ul>
+            </div>
+            <div id="sec3div-6" class="popup_div_blok">
+                <h2>Профессиональная разработка на PHP</h2>
+                <h3>(2 месяца, 1 раз в неделю)</h3>
+                <ul>
+                    <li>ООП в PHP</li>
+                    <li>Шаблон MVC</li>
+                    <li>Работа с базой данных</li>
+                    <li>Шаблонизаторы</li>
+                </ul>
+            </div>
+            <div id="sec3div-7" class="popup_div_blok">
+                <h2>Базы данных</h2>
+                <h3>(1 месяц, 2 раза в неделю)</h3>
+                <ul>
+                    <li>Проектирование баз данных</li>
+                    <li>MySql и MySql Workbench</li>
+                    <li>Язык SQL</li>
+                    <li>Объединение запросов, хранимые процедуры, триггеры, функции</li>
+                    <li>Транзакции и оптимизация запросов</li>
+                    <li>NoSQL и мастштабирование MySQL</li>
+                    <li>Движки MySQL, управление и обслуживание</li>
+                    <li>Подготовка к собеседованию</li>
+                </ul>
+            </div>
+            <div id="sec3div-8" class="popup_div_blok">
+                <h2>Операционные системы</h2>
+                <h3>(1 месяц, 2 раза в неделю)</h3>
+                <ul>
+                    <li>Потоки, процессы</li>
+                    <li>Основы работы Linux</li>
+                    <li>Управление памятью</li>
+                    <li>Файловые системы</li>
+                </ul>
+            </div>
+            <div id="sec3div-9" class="popup_div_blok">
+                <h2>YII 2 Framework. Часть 1</h2>
+                <h3>(1 месяц, 2 раза в неделю)</h3>
+                <ul>
+                    <li>Модели и формы в Yii 2</li>
+                    <li>DAO и ORM, работа с БД</li>
+                    <li>Автоматическая генерация кода с использованием GII</li>
+                    <li>Кеширование данных</li>
+                    <li>Тестирование в Yii2. Codeception + PHPUnit, Selenium</li>
+                    <li>REST API на базе Yii2</li>
+                    <li>PAjax</li>
+                    <li>Push-уведомления, интеграция с Telegram</li>
+                    <li>Оптимизация производительности</li>
+                </ul>
+            </div>
+            <div id="sec3div-10" class="popup_div_blok">
+                <h2>YII 2 Framework. Часть 2</h2>
+                <h3>(1 месяц, 2 раза в неделю)</h3>
+                <ul>
+                    <li>Модели и формы в Yii 2</li>
+                    <li>DAO и ORM, работа с БД</li>
+                    <li>Автоматическая генерация кода с использованием GII</li>
+                    <li>Кеширование данных</li>
+                    <li>Тестирование в Yii2. Codeception + PHPUnit, Selenium</li>
+                    <li>REST API на базе Yii2</li>
+                    <li>PAjax</li>
+                    <li>Push-уведомления, интеграция с Telegram</li>
+                    <li>Оптимизация производительности</li>
+                </ul>
+            </div>
+            <div id="sec3div-11" class="popup_div_blok">
+                <h2>React JS</h2>
+                <h3>(1 месяц, 2 раза в неделю)</h3>
+                <ul>
+                    <li>Стандарт ES6</li>
+                    <li>Webpack</li>
+                    <li>ReactJS</li>
+                    <li>Flux, Redux</li>
+                </ul>
+            </div>
+            <div id="sec3div-12" class="popup_div_blok">
+                <h2>Алгоритмы и структуры данных на PHP</h2>
+                <h3>(1 месяц, 1 раз в неделю)</h3>
+                <ul>
+                    <li>Рекурсивные алгоритмы</li>
+                    <li>Сортировки</li>
+                    <li>Динамические структуры данных</li>
+                </ul>
+            </div>
+            <div id="sec3div-13" class="popup_div_blok">
+                <h2>Архитектуры и шаблоны проектирования</h2>
+                <h3>(2 месяца, 1 раз в неделю)</h3>
+                <ul>
+                    <li>Проектирование UML-диаграмм</li>
+                    <li>Шаблоны проектирования: singletone, adapter,
+                        factory, dependency injection и многое другое.</li>
+                    <li>Основные архитектурные решения</li>
+                </ul>
+            </div>
+            <div id="sec3div-14" class="popup_div_blok">
+                <h2>Разработка Highload-проекта</h2>
+                <h3>(1 месяц, 2 раза в неделю)</h3>
+                <ul>
+                    <li>Профилирование. Поиск узких мест. Оптимизация PHP</li>
+                    <li>Оптимизация работы с БД</li>
+                    <li>Масштабирование БД: шардирование, балансировщики</li>
+                    <li>Кэширование: redis, memcache</li>
+                    <li>Горизонтальное скалирование, бесшовная развёртка приложений</li>
+                </ul>
+            </div>
+            <div id="sec3div-15" class="popup_div_blok">
+                <h2>Командная разработка</h2>
+                <h3>(2 месяца, 1 раз в неделю)</h3>
+                <ul>
+                    <li>Работа над крупным проектом в команде</li>
+                    <li>Bug Tracker</li>
+                    <li>Git flow</li>
+                </ul>
+            </div>
+            <div id="sec3div-16" class="popup_div_blok">
+                <h2>Подготовка к собеседованию веб-разработчика</h2>
+                <h3>(7 недель, 1 раз в неделю)</h3>
+                <ul>
+                    <li>PHP – основные понятия и задачи по процедурному программированию</li>
+                    <li>PHP – парадигма ООП и связанные задачи</li>
+                    <li>JavaScript – применение и логика</li>
+                    <li>MySQL – проектирование БД и построение запросов</li>
+                    <li>HTML/CSS – верстка и стилизация страниц</li>
+                    <li>Linux – базовые навыки работы в серверной операционной системе</li>
+                    <li>Контрольная работа</li>
+                </ul>
+            </div>
+        </div>
+    </article>
+</section>
+
+<!--Подарки-->
+<section class="sec-7">
+    <h2>Подарки</h2>
+    <p>Программистам без английского никуда, поэтому мы дарим всем студентам</p>
+    <div class="sec-7-container">
+        <div class="stat">
+            <img src="images/english_IT.png" alt="">
+            <h4>Английский для IT-специалистов</h4>
+            <p>Видеокурс</p>
+
+        </div>
+        <div class="stat">
+            <img src="images/english_dome.png" alt="">
+            <h4>Год обучения английскому</h4>
+            <p>Интерактивный онлайн-курс</p>
+
+        </div>
+
+    </div>
+</section>
+
+<!--Преподаватели-->
+<section id="sec4" class="sec-4">
+    <article class="ourTeam">
+        <h2>Преподаватели</h2>
+        <p>Ведущие преподаватели Geekbrains и других крупных IT компаний.
+            Профессиональные практикующие программисты, каждый из которых
+            обладает отличным профильным образованием, длительным стажем работы
+            по специальности, большим опытом разработки сервисов и приложений для
+            крупных компаний.</p>
+        <div class="ourTeam_container">
+            <div id="pers-blok-1" class="ourTeam_person_cont pers_blok_active">
+                <a href="javascript:teachers(-1)" class="person_last_arrow person_arrow_visible"></a>
+                <div id="pers-1" class="OT_person bg_red" onclick="processingPerson('pers-1','pi-1')">
+                    <img src="images/AP.jpg" alt="person img">
+                    <h4 class="text_red">Александр Пряхин</h4>
+                    <p>Team Leader отдела веб-разработки русско-немецкого холдинга HSE24</p>
+                    <div class="triangle triangle_active"></div>
+                </div>
+                <div id="pers-2" class="OT_person bg_green person_img_visible" onclick="processingPerson('pers-2','pi-2')">
+                    <img src="images/AK.jpg" alt="person img">
+                    <h4 class="text_green">Алексей Кадочников</h4>
+                    <p>Mail.Ru Group. Frontend developer</p>
+                    <div class="triangle"></div>
+                </div>
+                <div id="pers-3" class="OT_person bg_purple person_img_visible" onclick="processingPerson('pers-3','pi-3')">
+                    <img src="images/IF.jpg" alt="person img">
+                    <h4 class="text_purple">Игорь Филимонов</h4>
+                    <p>Senior Web Developer</p>
+                    <div class="triangle"></div>
+                </div>
+                <div id="pers-4" class="OT_person bg_orange person_img_visible" onclick="processingPerson('pers-4','pi-4')">
+                    <img src="images/PT.jpg" alt="person img">
+                    <h4 class="text_orange">Павел Тарасов</h4>
+                    <p>Веб-разработчик. Опыт работы над высоконагруженными проектами</p>
+
+                    <div class="triangle"></div>
+                </div>
+                <a href="javascript:teachers(1)" class="person_next_arrow person_arrow_visible"></a>
+            </div>
+
+            <div class="ourTeam_Person_info">
+                <div id="pi-1" class="person_info pi_active">
+                    <h4>Александр Пряхин</h4>
+                    <div class="info_content">
+                        <p>Выпускник Национального Исследовательского Университета «МАИ», факультет «Прикладная математика и физика». Работал в «Идеал-тур», «Аллес», в 2012 году занимал должность «Старший специалист отдела разработки» в ОАО «Смоленский банк». Сейчас руководит командой разработчиков в проекте «Shoppinglive.ru»</p>
+                    </div>
+                    <ul>
+                        <li onclick="location.href='https://devenergy.ru/'"><div class="social web"></div> Web</li>
+                    </ul>
+                </div>
+                <div id="pi-2" class="person_info">
+                    <h4>Алексей Кадочников</h4>
+                    <div class="info_content">
+                        <p>Выпускник Московского Института Электронной Техники, факультет микроприборов и технической кибернетики. Большой опыт backend-разработки для интернет-магазинов.
+                            Профессионально занимается поддержкой и разработкой веб-сайтов. Ведущий преподаватель GeekBrains с опытом более двух лет, обучил более 30 000 учеников</p>
+                    </div>
+                    <ul>
+                        <li onclick="location.href='https://vk.com/html_css_easily'"><div class="social vk"></div> VKontakte</li>
+                    </ul>
+                </div>
+                <div id="pi-3" class="person_info">
+                    <h4>Игорь Филимонов</h4>
+                    <div class="info_content">
+                        <p>Профессиональный веб-разработчик с опытом реализации IT-проектов с 2006 года. В настоящее время эксперт по разработке и интеграции высоконагруженных веб-приложений в
+                            ООО «МакроИндекс», ведущий преподаватель GeekBrains, участник и спикер конференции WordСamp Moscow.</p>
+                    </div>
+                    <ul>
+                        <li onclick="location.href='https://vk.com/jsdevelopment'"><div class="social vk"></div> VKontakte</li>
+                        <li onclick="location.href='https://www.youtube.com/channel/UCSx_Q34bFtYaIRTM1L-oPaQ/featured'"><div class="social youtube"></div> YouTube</li>
+                        <li onclick="location.href='https://http://i-filimonov.com/'"><div class="social web"></div> Web</li>
+                        <li onclick="location.href='mailto:expert@i-filimonov.com'"><div class="social mail"></div> E-Mail</li>
+
+                    </ul>
+                </div>
+                <div id="pi-4" class="person_info">
+                    <h4>Павел Тарасов</h4>
+                    <div class="info_content">
+                        <p>Индивидуальный предприниматель, фрилансер. Большой опыт создания сайтов, скриптов, парсеров, ботов для социальных сетей,
+                            работы с websocket, удалённой командной разработки. Профессионально занимается backend-разработкой на фреймворке Yii2 и оптимизирует запросы к БД под высоконагруженные проекты</p>
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </article>
+</section>
+
+<!--Изученные технологии-->
+<section id="sec8" class="sec-8">
+    <article class="attainments">
+        <h2>После года практического обучения.</h2>
+        <p>Освоите современные технологии Веб-разработки</p>
+        <div class="techs">
+            <div class="tech">
+                <figure><img src="images/techs/html.png" alt="html">
+                    <figcaption>HTML</figcaption>
+                </figure>
+            </div>
+            <div class="tech">
+                <figure><img src="images/techs/css.png" alt="css">
+                    <figcaption>CSS</figcaption>
+                </figure>
+            </div>
+            <div class="tech">
+                <figure><img src="images/techs/js.png" alt="JavaScript">
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+            </div>
+            <div class="tech">
+                <figure><img src="images/techs/bootstrap.png" alt="bootstrap">
+                    <figcaption>Bootstrap</figcaption>
+                </figure>
+            </div>
+            <div class="tech">
+                <figure><img src="images/techs/restful.png" alt="RESTful API">
+                    <figcaption>RESTful API</figcaption>
+                </figure>
+            </div>
+            <div class="tech">
+                <figure><img src="images/techs/yii.png" alt="yii">
+                    <figcaption>Yii2</figcaption>
+                </figure>
+            </div>
+            <div class="tech">
+                <figure><img src="images/techs/xml.png" alt="xml">
+                    <figcaption>XML</figcaption>
+                </figure>
+            </div>
+            <div class="tech">
+                <figure><img src="images/techs/jquery.png" alt="jquery">
+                    <figcaption>JQuery</figcaption>
+                </figure>
+            </div>
+            <div class="tech">
+                <figure><img src="images/techs/php.png" alt="php">
+                    <figcaption>PHP</figcaption>
+                </figure>
+            </div>
+            <div class="tech">
+                <figure><img src="images/techs/redmine.png" alt="redmine">
+                    <figcaption>Redmine</figcaption>
+                </figure>
+            </div>
+            <div class="tech">
+                <figure><img src="images/techs/mongo.png" alt="mongo">
+                    <figcaption>MongoDB</figcaption>
+                </figure>
+            </div>
+            <div class="tech">
+                <figure><img src="images/techs/redis.png" alt="redis">
+                    <figcaption>Redis</figcaption>
+                </figure>
+            </div>
+            <div class="tech">
+                <figure><img src="images/techs/ajax.png" alt="ajax">
+                    <figcaption>Ajax</figcaption>
+                </figure>
+            </div>
+            <div class="tech">
+                <figure><img src="images/techs/git.png" alt="git">
+                    <figcaption>Git</figcaption>
+                </figure>
+            </div>
+            <div class="tech">
+                <figure><img src="images/techs/mysql.png" alt="mysql">
+                    <figcaption>MySQL</figcaption>
+                </figure>
+            </div>
+            <div class="tech">
+                <figure><img src="images/techs/json.png" alt="json">
+                    <figcaption>JSON</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p>Приобретёте компетенции необходимые для работы
+            в крупной IT-компании</p>
+        <ul class="experience">
+            <li><img src="images/success.svg" alt="success"> Навыки автоматизированного тестирования кода</li>
+            <li><img src="images/success.svg" alt="success"> Работа с Highload-проектами</li>
+            <li><img src="images/success.svg" alt="success"> Работа в команде</li>
+            <li><img src="images/success.svg" alt="success"> Умение работать с GIT</li>
+            <li><img src="images/success.svg" alt="success"> Знание принципов ООП и паттернов проектирования</li>
+            <li><img src="images/success.svg" alt="success"> Управление продуктами и проектами</li>
+            <li><img src="images/success.svg" alt="success"> Сетевая безопасность</li>
+            <li><img src="images/success.svg" alt="success"> Навыки успешного прохождения собеседований и общения с заказчиками</li>
+            <li><img src="images/success.svg" alt="success"> Навыки проектирования архитектуры, использования шаблонов проектирования,
+                принципов SOLID, следованию code style</li>
+        </ul>
+
+    </article>
+
+</section>
+
+<!--Часто задаваемые вопросы-->
+<section id="sec6" class="sec-6">
+    <article class="testimonials">
+        <h2>Часто задаваемые вопросы</h2>
+        <!--<p>We understand your requirement and provide quality works.</p>-->
+        <div class="testimonials_conteiner">
+            <img src="images/question.jpg" alt="image question">
+            <div id="quest" class="question_blok bg_red">
+                <a href="javascript:prevQuestion()" id="prev-quest">PREW</a>
+                <a href="javascript:nextQuestion()" id="next-quest">NEXT</a>
+                <div id="questCont-1" class="quest_cont quest_cont_active">
+                    <h4>Как проходит обучение?</h4>
+                    <p>Уроки проходят в формате Online-трансляций,
+                        несколько раз в неделю в вечернее время по мск.
+                        Преподаватель объясняет темы, все его действия отображаются на экране.
+                        Студенты задают вопросы и обсуждают материал в чате. В конце каждого
+                        урока студенты получают домашние задания. Преподаватель оценивает их
+                        и обсуждает плюсы и минусы на следующем занятии.</p>
+                </div>
+                <div id="questCont-2" class="quest_cont">
+                    <h4>Что делать, если я не могу учиться Online?</h4>
+                    <p>Для тех, кто не смог вовремя присутствовать на уроке, мы
+                        записываем каждое занятие. Видеозаписи всегда доступны в разделе обучения.
+                        Также к каждому уроку мы разработали методички, с помощью которых
+                        можно лучше подготовиться к занятиям и получить дополнительные знания.</p>
+                </div>
+                <div id="questCont-3" class="quest_cont">
+                    <h4>Можно ли делать перерывы в обучении?</h4>
+                    <p>Между курсами можно делать перерывы и регулировать интенсивность
+                        своего развития по мере усвоения знаний. Мы рекомендуем не записываться на
+                        все курсы сразу, а проходить их последовательно и работать на результат.</p>
+                </div>
+                <div id="questCont-4" class="quest_cont">
+                    <h4>Кто преподаёт в GeekBrains?</h4>
+                    <p>Преподавать в GeekBrains могут только специалисты с большим
+                        опытом реализации проектов. Мы проводим жёсткий отбор кандидатов с помощью
+                        программ аттестации и внутреннего обучения.  Студенты оценивают
+                        уровень преподавателя и качество программы по пятибалльной шкале.
+                        Таким образом, мы улучшаем образовательный процесс ежедневно.</p>
+                </div>
+                <div id="questCont-5" class="quest_cont">
+                    <h4>Кто такие наставники?</h4>
+                    <p>Наставником может стать любой студент GeekBrains, который
+                        пройдёт нашу систему тестирования. Основная задача наставников -
+                        помогать студентам осваивать профессиональные навыки, отвечать на вопросы,
+                        касающиеся домашних заданий и учебных проектов.</p>
+                </div>
+                <div id="questCont-6" class="quest_cont">
+                    <h4>Помогаете ли вы с трудоустройством?</h4>
+                    <p>В программу обучения входит гарантированная стажировка,
+                        которая даёт компетенции, необходимые для старта карьеры.
+                        Основная задача - получить опыт командной разработки.
+                        Также выпускники курсов могут стажироваться в компаниях-партнёрах,
+                        которые предлагают различные варианты трудоустройства в разделе “Карьера”.</p>
+                </div>
+                <div id="questCont-7" class="quest_cont">
+                    <h4>Что делать, если у меня проблема или срочный вопрос?</h4>
+                    <p>Если вы являетесь студентом платных курсов и у вас возникли
+                        вопросы, связанные с образовательным процессом, свяжитесь с нами:
+                    <a href="mailto:sales@geekbrains.ru" target="_blank">sales@geekbrains.ru</a>
+                     или 8-800-700-68-41 (звонок бесплатный). По остальным вопросам пишите нам
+                        на <a href="mailto:support@geekbrains.ru" target="_blank">support@geekbrains.ru</a>.</p>
+                </div>
+                <div id="questCont-8" class="quest_cont">
+                    <h4>Какой требуется опыт для обучения?</h4>
+                    <p>Наши образовательные программы ориентированы на тех,
+                        кто хочет с нуля освоить профессиональные навыки. Для обучения
+                        начальной подготовки или базовых знаний не требуется.</p>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="javascript:pagQuestion(1)" id="pag-1" class="pag pag_red pag_r_active"></a>
+                <a href="javascript:pagQuestion(2)" id="pag-2" class="pag pag_green"></a>
+                <a href="javascript:pagQuestion(3)" id="pag-3" class="pag pag_purple"></a>
+                <a href="javascript:pagQuestion(4)" id="pag-4" class="pag pag_orange"></a>
+                <a href="javascript:pagQuestion(5)" id="pag-5" class="pag pag_red"></a>
+                <a href="javascript:pagQuestion(6)" id="pag-6" class="pag pag_green"></a>
+                <a href="javascript:pagQuestion(7)" id="pag-7" class="pag pag_purple"></a>
+                <a href="javascript:pagQuestion(8)" id="pag-8" class="pag pag_orange"></a>
+            </div>
+        </div>
+    </article>
+</section>
+
+<!--Заявка на обучение-->
+
+<section id="sec10" class="sec-10">
+        <h2>Оставьте заявку</h2>
+        <p>Мы свяжемся с вами в ближайшее время.</p>
+        <form action="#">
+            <input id='name' class="entry_field" placeholder="Имя Фамилия" required pattern="\S+[А-Яа-яЁё\s]+[А-Яа-яЁё]"
+                   title="Иван Федоров">
+            <input id='telephone' class="entry_field" placeholder="+79039555555" required pattern="\+[0-9]{11,}"
+                   title="+79039555555">
+            <input id="email" class="width_input entry_field" placeholder="Ваш E-Mail" required pattern="\S+@[a-z]+.[a-z]+"
+                   title="email@server.com">
+            <label for="gender">Выберите факультет, для обучения</label>
+            <select id="gender">
+                <option value="web">Веб-разработка</option>
+                <option value="java">Java-разработка</option>
+                <option value="python">Pyton-разработка</option>
+                <option value="android">Android-разработка</option>
+                <option value="ios">iOS-разработка</option>
+                <option value="games">Разработка игр</option>
+            </select>
+            <textarea id="comments" placeholder="Перечислите дополнительную информацию, которую вы хотели бы сообщить о себе"></textarea>
+            <input type="submit" value="Хочу поступить" class="style_button" onclick="submitButton()">
+        </form>
+    <!--<a href="#" class="style_button">Хочу поступить</a>-->
+
+    <footer>
+        <div class="f_container">
+            <div class="f_blok f_lable"><span class="fLetter">G</span>eek<span class="fLetter">B</span>rains</div>
+            <div class="f_blok">
+                <h4 class="text_green">Навигация:</h4>
+                <nav>
+                    <ul>
+                        <li><a href="#sec1">О проекте</a></li>
+                        <li><a href="#sec2">Факультеты</a></li>
+                        <li><a href="#sec5">Программа</a></li>
+                        <li><a href="#sec4">Преподаватели</a></li>
+                        <li><a href="#sec8">Результаты</a></li>
+                        <li><a href="#sec6">Вопросы</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="f_blok clearfix">
+                <h4 class="text_purple">Адрес:</h4>
+                <p>125167, город Москва, пр-т Ленинградский, дом. 39, строение 79. <br>
+                Бесплатный телефон по России: 8 800 700-68-41</p>
+            </div>
+            <div class="f_blok">
+                <h4 class="text_orange">Нас можно найти:</h4>
+                <a href="https://www.facebook.com/geekbrains.ru" target="_blank"><img src="images/f_social_svg/facebook.svg" alt="facebook"></a>
+                <a href="https://vk.com/geekbrainsru" target="_blank"><img src="images/f_social_svg/vk.svg" alt="VKontakte"></a>
+                <a href="https://www.instagram.com/geekbrains.ru" target="_blank"><img src="images/f_social_svg/instagram.svg" alt="Instagram"></a>
+                <a href="https://youtube.com/user/progliveru" target="_blank"><img src="images/f_social_svg/youtube.svg" alt="YouTube"></a>
+                <a href="https://telegram.me/geekbrains_ru" target="_blank"><img src="images/f_social_svg/telegram.svg" alt="Telegram"></a>
+            </div>
+        </div>    <div class="buttom_line_blok buttom_line_blok_buttom"></div>
+    </footer>
+
+</section>
+
+
+
+</body>
+</html>
